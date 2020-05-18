@@ -76,6 +76,19 @@ jobs:
         - PYDIST="ANACONDA"
         - ANACONDA_CHANNEL="conda-forge"
       python: "3.8"
+    - name: "Bleeding Edge: gcc-10, Python 3.8"
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - gcc-10
+            - gfortran-10
+            - g++-10
+      env:
+        - GCC_VERSION="10"
+        - PYVER="3"
+      python: "3.8"
 
 before_install:
   # Configure right compilers version
