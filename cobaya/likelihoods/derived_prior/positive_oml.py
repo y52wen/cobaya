@@ -1,5 +1,5 @@
 from cobaya.likelihood import Likelihood
-
+from scipy.stats import norm
 '''
 class _H0_prototype(Likelihood):
     # Data type for aggregated chi2 (case sensitive)
