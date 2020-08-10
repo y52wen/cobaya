@@ -28,7 +28,7 @@ class positive_oml(Likelihood):
     def logp(self, **params_values):
         omegal_theory = self.provider.get_param("omegal")
         if omegal_theory>=0:
-            rertun 0.0
+            return 0.0
         else:
             return -1e30
          
